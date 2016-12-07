@@ -38,11 +38,11 @@ def insertion_sort(ar):
                 print(' '.join(map(str, ar)))
                 if i == 0:
                     ar[0] = x
-                    print_list(ar)
+                    print(' '.join(map(str, ar)))
                     break
             else:
                 ar[i + 1] = x
-                print_list(ar)
+                print(' '.join(map(str, ar)))
                 break
         return(ar)
                 
@@ -50,4 +50,4 @@ if __name__ == '__main__':
     s = int(sys.stdin.readline())
     ar = list(map(int, sys.stdin.readline().split()))
     
-    inserti
+    insertion_sort(ar)
